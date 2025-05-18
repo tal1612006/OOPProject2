@@ -7,17 +7,15 @@
 #include "FlowersBouquet.h"
 #include "Person.h"
 
-class Florist: Person {
+class Florist: public Person {
 private:
     Wholesaler* wholesaler;
     FlowerArranger* flowerArranger;
     DeliveryPerson* deliveryPerson;
 
 public:
-    Florist(Wholesaler* w, FlowerArranger* fa, DeliveryPerson* dp)
-        : wholesaler(w), flowerArranger(fa), deliveryPerson(dp) {
-    }
-
+    Florist(Wholesaler* w, FlowerArranger* fa, DeliveryPerson* dp, std::string name);
+   
     void acceptOrder(Person* recipient, std::vector<std::string> flowers);
 };
 

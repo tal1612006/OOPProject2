@@ -4,8 +4,10 @@
 #include "FlowersBouquet.h"
 #include "Person.h"
 
-class DeliveryPerson {
+class DeliveryPerson : public Person{
 public:
+    DeliveryPerson(std::string name);
+
     void deliver(Person* recipient, FlowersBouquet* bouquet);
 };
 

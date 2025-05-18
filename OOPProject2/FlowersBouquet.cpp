@@ -1,17 +1,18 @@
 #include "FlowersBouquet.h"
 
-FlowersBouquet::FlowersBouquet(std::vector<std::string> flowers)
-    : flowers(flowers), arranged(false) {
+FlowersBouquet::FlowersBouquet(std::vector<std::string> flowers) {
+    this->flowers = flowers;
+    this->arranged=false;
 }
 
 void FlowersBouquet::arrange() {
     arranged = true;
 }
 
-bool FlowersBouquet::isArranged() const {
+bool FlowersBouquet::isArranged()  {
     return arranged;
 }
 
-const std::vector<std::string>& FlowersBouquet::getFlowers() const {
+ std::vector<std::string>& FlowersBouquet::getFlowers()  {
     return flowers;
 }

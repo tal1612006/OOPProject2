@@ -1,12 +1,16 @@
 #include "Wholesaler.h"
+#include "Grower.h"
 #include <iostream>
 #include "Person.h"
 
-Wholesaler::Wholesaler(std::string name, Grower* g)
-    : Person(name), grower(g) {
+Grower::Grower(Gardener* g, std::string name) : Person(name){
+    this->gardener=g;
 }
 
-FlowersBouquet* Wholesaler::acceptOrder(std::vector<std::string> flowers) {
-    std::cout << name << " forwards the request to the Grower\n";
-    return grower->prepareOrder(flowers);
+FlowersBouquet* Grower::prepareOrder(std::vector<std::string> flowers) {
+    std::cout << "Grower " +getName() + " forwards the request to Gardener "+ gardener->getName() + "." << std::endl;
+
+    FlowersBouquet* b = gardener->prepareBouquet(flowers);
+    std::cout << "Gardener " + gardener->getName() + " returns flowers to Grower " + getName() + "." << std::endl;
+    return b;
 }

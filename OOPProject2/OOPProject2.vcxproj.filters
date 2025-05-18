@@ -18,29 +18,29 @@
     <ClCompile Include="OOPProject2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Person.cpp">
-      <Filter>Header Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Florist.cpp">
-      <Filter>Header Files</Filter>
-    </ClCompile>
     <ClCompile Include="Wholesaler.cpp">
-      <Filter>Header Files</Filter>
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Person.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Grower.cpp">
-      <Filter>Header Files</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Gardener.cpp">
-      <Filter>Header Files</Filter>
-    </ClCompile>
-    <ClCompile Include="FlowerArranger.cpp">
-      <Filter>Header Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DeliveryPerson.cpp">
-      <Filter>Header Files</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="FlowersBouquet.cpp">
-      <Filter>Header Files</Filter>
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FlowerArranger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Florist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeliveryPerson.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

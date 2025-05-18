@@ -4,12 +4,12 @@
 #include "Gardener.h"
 #include "FlowersBouquet.h"
 
-class Grower:public Person {
+class Grower: public Person {
 private:
     Gardener* gardener;
 
 public:
-    Grower(Gardener* g) : gardener(g) {}
+    Grower(Gardener* g, std::string name);
 
     FlowersBouquet* prepareOrder(std::vector<std::string> flowers);
 };

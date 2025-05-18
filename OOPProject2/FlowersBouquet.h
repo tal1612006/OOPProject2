@@ -11,8 +11,8 @@ private:
 public:
     FlowersBouquet(std::vector<std::string> flowers);
     void arrange();
-    bool isArranged() const;
-    const std::vector<std::string>& getFlowers() const;
+    bool isArranged();
+    std::vector<std::string>& getFlowers();
 };
 
 #endif 

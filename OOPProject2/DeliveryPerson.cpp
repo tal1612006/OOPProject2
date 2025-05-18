@@ -1,6 +1,10 @@
 #include "DeliveryPerson.h"
+#include <iostream>
+#include "Person.h"
+
+DeliveryPerson::DeliveryPerson(std::string name) : Person(name) {}
 
 void DeliveryPerson::deliver(Person* recipient, FlowersBouquet* bouquet) {
-    std::cout << "Delivery person delivers the flowers to " << recipient->getName() << "." << std::endl;
+    std::cout << "Delivery Person "+getName() + " delivers flowers "+recipient->getName() + "." << std::endl;
     recipient->acceptFlowers(bouquet);
 }

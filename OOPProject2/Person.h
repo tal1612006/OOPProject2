@@ -2,7 +2,6 @@
 #define PERSON_H
 
 #include <string>
-#include <string>
 #include <vector>
 #include "FlowersBouquet.h"
 
@@ -15,7 +14,7 @@ public:
     virtual ~Person() = default;
     virtual void orderFlowers(Florist* florist, Person* recipient, std::vector<std::string> flowers);
     virtual void acceptFlowers(FlowersBouquet* bouquet);
-    std::string getName() const;
+    std::string getName();
 };
 
 #endif

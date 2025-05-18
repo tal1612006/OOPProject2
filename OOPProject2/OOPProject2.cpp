@@ -2,11 +2,34 @@
 //
 
 #include <iostream>
+#include "Wholesaler.h"
+#include "Person.h"
+#include "Florist.h"
+#include "Wholesaler.h"
+#include "Grower.h"
+#include "Gardener.h"
+#include "FlowerArranger.h"
+#include "DeliveryPerson.h"
+#include <vector>
+#include <string>
 
-int main()
-{
-    std::cout << "Hello World!\n";
+int main() {
+    Gardener gardener("Garett");
+    Grower grower( &gardener, "Gray" );
+    Wholesaler wholesaler( &grower, "Watson");
+    FlowerArranger arranger("Flora");
+    DeliveryPerson delivery("Dylan");
+    Florist florist( &wholesaler, &arranger, &delivery, "Fred");
+
+    Person sender("Chris");
+    Person recipient("Robin");
+
+    std::vector<std::string> flowers = { "Roses", "Violets", "Gladiolus" };
+    sender.orderFlowers(&florist, &recipient, flowers);
+
+    return 0;
 }
+
 
 
 

@@ -1,4 +1,3 @@
-// Wholesaler.h
 #ifndef WHOLESALER_H
 #define WHOLESALER_H
 
@@ -10,7 +9,7 @@ class Wholesaler : public Person {
 private:
     Grower* grower;
 public:
-    Wholesaler(std::string name, Grower* g);
+    Wholesaler(Grower* g, std::string name);
     FlowersBouquet* acceptOrder(std::vector<std::string> flowers);
 };
 
